@@ -44,7 +44,7 @@
       {
           "body": [
               {
-              "url": "https://crowdworks-image.s3.ap-southeast-2.amazonaws.com/mun/KakaoTalk_20240823_221556583.jpg",
+              "url": "https://~.jpg",
               "name": "KakaoTalk_20240823_221556583.jpg",
               "size": 246573,
               "createdAt": "2024-11-02T17:47:26"
@@ -153,7 +153,7 @@
             "Action": [
                         "s3:ListBucket"
                         ],
-            "Resource": "arn:aws:s3:::crowdworks-image"
+            "Resource": "arn:aws:s3:::your-bucketName"
             },
             {
             "Effect": "Allow",
@@ -162,7 +162,7 @@
                 "s3:PutObject",
                 "s3:DeleteObject"
             ],
-              "Resource": "arn:aws:s3:::crowdworks-image/*"
+              "Resource": "arn:aws:s3:::your-bucketName/*"
             }
         ]
     }
@@ -180,7 +180,7 @@
               "Effect": "Allow",
               "Principal": "*",
               "Action": "s3:GetObject",
-              "Resource": "arn:aws:s3:::crowdworks-image/*"
+              "Resource": "arn:aws:s3:::your-bucketName/*"
             }
           ]
         }
