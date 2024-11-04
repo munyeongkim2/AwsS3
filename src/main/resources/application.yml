@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: image
+cloud:
+  aws:
+    credentials:
+      access-key:
+      secret-key:
+    region:
+      static:
+    stack:
+      auto: false
+    s3:
+      bucket-name :
+      path : default/
+
